@@ -1,5 +1,7 @@
 # website-for-grub
 My website for Hack Club's [Grub](https://grub.hackclub.com) YSWS!
+
+![IMG](https://hackatime-badge.hackclub.com/U08RJ1PEM7X/website-for-grub)
 ## Features
 These are the six features I added!
 1. Header
