@@ -8,17 +8,16 @@
   <script src="https://kit.fontawesome.com/cd123fe29a.js" crossorigin="anonymous"></script>
 </head>
 
-<body
-  class="text-black dark:text-white bg-gradient-to-br from-purple-300 to-indigo-200 dark:from-purple-600 dark:to-indigo-700">
-  <header class="w-full p-2 justify-between flex md:px-10 items-center bg-slate-300 dark:bg-slate-500 sticky">
+<body class="text-black dark:text-white bg-gradient-to-br from-purple-300 to-indigo-200 dark:from-purple-600 dark:to-indigo-700">
+  <header class="w-full p-2 justify-between flex px-6 md:px-10 items-center bg-slate-300 dark:bg-slate-500 sticky">
     <img src="https://raw.githubusercontent.com/aelithron/website-for-grub/refs/heads/main/pfp.jpg"
       alt="my cat drawing, but in the header and smol :3" class="rounded-2xl w-10 h-10">
     <div class="space-x-4 text-lg items-center flex">
-      <a href="#intro"><i class="fa-solid fa-house"></i></a>
-      <a href="#cats"><i class="fa-solid fa-cat"></i></a>
-      <a href="#stars"><i class="fa-solid fa-star"></i></a>
-      <a href="#food"><i class="fa-solid fa-utensils"></i></a>
-      <a href="mailto:nova@hackclub.app"><i class="fa-solid fa-envelope"></i></a>
+      <a href="#intro" class="hover:text-sky-500"><i class="fa-solid fa-house"></i></a>
+      <a href="#cats" class="hover:text-sky-500"><i class="fa-solid fa-cat"></i></a>
+      <a href="#stars" class="hover:text-sky-500"><i class="fa-solid fa-star"></i></a>
+      <a href="#food" class="hover:text-sky-500"><i class="fa-solid fa-utensils"></i></a>
+      <a href="mailto:nova@hackclub.app" class="hover:text-sky-500"><i class="fa-solid fa-envelope"></i></a>
     </div>
   </header>
   <div class="flex flex-col min-h-screen items-center p-6 md:px-16 gap-4">
@@ -26,46 +25,51 @@
       <img src="https://raw.githubusercontent.com/aelithron/website-for-grub/refs/heads/main/pfp.jpg"
         alt="my cat drawing! drawn by me btw" class="rounded-full w-20 h-20">
       <h1 class="text-3xl font-semibold">Aelithron's fun little site!</h1>
-      <h2 class="text-xl">For Hack Club's Grub YSWS :3</h2>
+      <h2 class="text-xl">For Hack Club's <a class="hover:text-sky-500 underline" href="https://grub.hackclub.com">Grub</a> YSWS :3</h2>
+      <a href="https://github.com/aelithron/website-for-grub"><img src="https://hackatime-badge.hackclub.com/U08RJ1PEM7X/website-for-grub"></a>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <div id="cats" class="flex flex-col bg-purple-300 dark:bg-purple-600 rounded-xl p-2">
         <h2 class="text-xl font-semibold text-center"><i class="fa-solid fa-cat"></i> Cats</h2>
-        <ul class="list-disc list-inside">
-          <li>meow</li>
+        <ul class="list-disc list-inside p-2">
           <li>Cats are really cute</li>
-          <li>if you can, you should adopt a cat</li>
-          <li>they are great pets</li>
+          <li>If you can, you should adopt a cat</li>
+          <li>Cats spend ~70% of their lives sleeping</li>
+          <li>They can make over 100 unique sounds :3</li>
           <li>i wish i lived in a pet friendly apartment</li>
         </ul>
       </div>
       <div id="stars" class="flex flex-col bg-violet-300 dark:bg-violet-600 rounded-xl p-2">
         <h2 class="text-xl font-semibold text-center"><i class="fa-solid fa-star"></i> Stars</h2>
-        <ul class="list-disc list-inside">
+        <ul class="list-disc list-inside p-2">
           <li>Stars are interesting and look epic</li>
           <li>Stars can explode into supernovas when they die</li>
+          <li>Stars often come in multiples!</li>
+          <li>There are ~1 trillion stars in our galaxy</li>
           <li>my name is inspired by stars/space (Nova)</li>
         </ul>
       </div>
     </div>
     <div id="food" class="flex flex-col bg-indigo-300 dark:bg-indigo-500 rounded-xl p-2">
       <h2 class="text-xl font-semibold text-center"><i class="fa-solid fa-utensils"></i> Food</h2>
-      <p>The meal I plan to buy with my grant!</p>
+      <p class="text-center">The meal I plan to buy with my grant from this!</p>
+      <p class="text-center text-sm italic mb-2">All from Dairy Queen - try hovering!</p>
       <div class="grid grid-cols-1 md:grid-cols-3 grid-rows-3 md:grid-rows-1 gap-4">
-        <div class="flex flex-col">
+        <div class="flex flex-col text-center items-center justify-center rounded-2xl hover:bg-indigo-400 p-2">
           <img width="100" height="100"
             src="https://raw.githubusercontent.com/aelithron/website-for-grub/refs/heads/main/food-pictures/burger.webp"
             alt="a Dairy Queen hamburger">
-          <p>Backyard Bacon Ranch Stackburger</p>
+          <p>Backyard Bacon</p>
+          <p>Ranch Stackburger</p>
         </div>
-        <div class="flex flex-col">
+        <div class="flex flex-col text-center items-center justify-center rounded-2xl hover:bg-indigo-400 p-2">
           <img width="100" height="100"
             src="https://raw.githubusercontent.com/aelithron/website-for-grub/refs/heads/main/food-pictures/side.webp"
             alt="a Dairy Queen onion rings side">
           <p>Onion Rings</p>
         </div>
-        <div class="flex flex-col">
-          <img width="100" height="100"
+        <div class="flex flex-col text-center items-center justify-center rounded-2xl hover:bg-indigo-400 p-2">
+          <img width="60" height="60"
             src="https://raw.githubusercontent.com/aelithron/website-for-grub/refs/heads/main/food-pictures/drink.webp"
             alt="a coca-cola">
           <p>Coca-Cola</p>
@@ -73,8 +77,12 @@
       </div>
     </div>
   </div>
-  <footer class="w-full p-2 justify-between flex md:px-10 items-center bg-slate-300 dark:bg-slate-500">
-
+  <footer class="w-full p-2 justify-center text-center flex px-4 md:px-10 items-center bg-slate-300 dark:bg-slate-500 space-x-2">
+    <p>Made by Nova (aka Aelithron)</p>
+    <p> - </p>
+    <p>meow mrrp nya :3</p>
+    <a href="https://github.com/aelithron/website-for-grub" class="hover:text-sky-500"><i class="fa-brands fa-github"></i></a>
+    <a href="mailto:nova@hackclub.app" class="hover:text-sky-500"><i class="fa-solid fa-envelope"></i></a>
   </footer>
 </body>
 
